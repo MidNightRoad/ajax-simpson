@@ -10,7 +10,8 @@ function fetchSimpsonJSON() {
         console.log('data decoded from JSON:', simpson);
 
         const simpsonHtml = `
-          <p><strong>${simpson[0].quote}</strong></p>
+          <p>${simpson[0].character}</p>
+        <p><strong>${simpson[0].quote}</strong></p>
           <img src="${simpson[0].image}" />
         `;
         document.querySelector('#simpson').innerHTML = simpsonHtml;
